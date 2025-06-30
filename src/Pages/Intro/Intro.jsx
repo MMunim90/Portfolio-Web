@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import profilePic from "../../assets/munim.jpg";
 
 const Intro = () => {
@@ -37,6 +38,37 @@ const Intro = () => {
             className="btn btn-outline border-secondary text-secondary hover:bg-secondary hover:text-white transition"
           >
             Download Resume
+          </a>
+        </div>
+
+        {/* Social Media Buttons */}
+        <div className="flex gap-6 pt-8 justify-center md:justify-start text-primary text-2xl">
+          <a
+            href="https://github.com/MMunim90"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="hover:text-secondary transition"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/m-munim/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="hover:text-secondary transition"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://x.com/__munim__"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            className="hover:text-secondary transition"
+          >
+            <FaTwitter />
           </a>
         </div>
       </div>
