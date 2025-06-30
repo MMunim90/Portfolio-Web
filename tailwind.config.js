@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         background: "#0f172a",
-        primary: "#3b82f6",
+        primary: "#6b7280",   
         accent: "#22c55e",
         highlight: "#0ea5e9",
         text: "#f8fafc",
@@ -22,7 +22,7 @@ export default {
     themes: [
       {
         munimtheme: {
-          primary: "#3b82f6",
+          primary: "#6b7280",   
           secondary: "#22c55e",
           accent: "#0ea5e9",
           neutral: "#1e293b",
