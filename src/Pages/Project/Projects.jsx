@@ -10,15 +10,15 @@ const projects = [
   },
   {
     id: 2,
-    name: "Word Guess Game",
-    image: "/images/wordguess.png",
-    slug: "word-guess",
+    name: "roommate-finder-client",
+    image: "https://i.ibb.co/HDCphMqd/Screenshot-2025-06-25-161456.png",
+    slug: "roommate-finder-client",
   },
   {
     id: 3,
-    name: "Flappy Bird with JavaScript",
-    image: "/images/flappy.png",
-    slug: "flappy-bird",
+    name: "Subscription Box Project",
+    image: "https://i.ibb.co/23pNGjdv/Screenshot-2025-06-25-155503.png",
+    slug: "Subscription-box-project",
   },
 ];
 

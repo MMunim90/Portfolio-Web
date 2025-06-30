@@ -1,38 +1,39 @@
-import React from 'react';
-import { Link } from "react-scroll";
+import React from "react";
+import { Link as RouterLink } from "react-router";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <Link to="home" smooth={true} duration={500}>
+        <ScrollLink to="home" smooth={true} duration={500} className="cursor-pointer">
           Home
-        </Link>
+        </ScrollLink>
       </li>
       <li>
-        <Link to="about" smooth={true} duration={500}>
+        <ScrollLink to="about" smooth={true} duration={500} className="cursor-pointer">
           About
-        </Link>
+        </ScrollLink>
       </li>
       <li>
-        <Link to="projects" smooth={true} duration={500}>
+        <ScrollLink to="projects" smooth={true} duration={500} className="cursor-pointer">
           Projects
-        </Link>
+        </ScrollLink>
       </li>
       <li>
-        <Link to="skills" smooth={true} duration={500}>
+        <ScrollLink to="skills" smooth={true} duration={500} className="cursor-pointer">
           Skills
-        </Link>
+        </ScrollLink>
       </li>
       <li>
-        <Link to="education" smooth={true} duration={500}>
+        <ScrollLink to="education" smooth={true} duration={500} className="cursor-pointer">
           Education
-        </Link>
+        </ScrollLink>
       </li>
       <li>
-        <Link to="contact" smooth={true} duration={500}>
+        <ScrollLink to="contact" smooth={true} duration={500} className="cursor-pointer">
           Contact
-        </Link>
+        </ScrollLink>
       </li>
     </>
   );
@@ -40,9 +41,9 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 text-base-content shadow-md sticky top-0 z-50">
       <div className="navbar-start">
-        <a className="btn btn-ghost normal-case text-xl text-primary">
+        <RouterLink to="/" className="btn btn-ghost normal-case text-xl text-primary">
           Munim.dev
-        </a>
+        </RouterLink>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-2">{navItems}</ul>
@@ -50,6 +51,7 @@ const Navbar = () => {
       <div className="navbar-end lg:hidden">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost">
+            {/* Hamburger icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
