@@ -1,2 +1,27 @@
+/* Global font style — Using "Inter" for a clean, modern UI look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
+@tailwind utilities;
+
+@plugin "daisyui/theme" {
+  name: "graywhite";
+  default: true;
+
+  --text-primary: #3f3f3f;     
+  --color-secondary: #525252;     
+  --color-accent: #a3a3a3;       
+  --color-base-100: #ffffff;      
+  --color-base-200: #f4f4f5;    
+  --color-base-300: #e4e4e7;      
+  --color-neutral: #262626;      
+  --color-info: #737373;         
+  --color-success: #9ca3af;       
+  --color-warning: #d4d4d4;       
+  --color-error: #a1a1aa;   
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+}
