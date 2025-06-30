@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import profilePic from "../../assets/munim.jpg";
 
 const Intro = () => {
-    return (
-        <section
+  return (
+    <section
       id="home"
       className="min-h-screen bg-base-100 text-base-content flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-24 py-12"
     >
-      {/* Left: Text */}
+      {/* Left Side: Text Content */}
       <div className="max-w-xl space-y-6 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">
           MD. SHAHAN AL MUNIM
@@ -16,14 +16,27 @@ const Intro = () => {
           Frontend Developer & UI Enthusiast
         </h2>
         <p className="text-lg text-info leading-relaxed">
-          I craft responsive web interfaces using modern JavaScript tools and love building elegant, user-friendly experiences. Currently focusing on React.js and UI-driven design.
+          I craft responsive web interfaces using modern JavaScript tools and
+          love building elegant, user-friendly experiences. Currently focusing
+          on React.js and UI-driven design.
         </p>
-        <div className="pt-4">
+
+        <div className="flex flex-col md:flex-row items-center gap-4 pt-4 justify-center md:justify-start">
           <a
             href="#contact"
-            className="btn btn-outline border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300"
+            className="btn btn-outline border-primary text-primary hover:bg-primary hover:text-white transition"
           >
             Let’s Connect
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/1PHQ2k1rBPgHfwhnRzzwNkAL_-oIZ7m4M/view?usp=drive_link"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline border-secondary text-secondary hover:bg-secondary hover:text-white transition"
+          >
+            Download Resume
           </a>
         </div>
       </div>
@@ -37,7 +50,7 @@ const Intro = () => {
         />
       </div>
     </section>
-    );
+  );
 };
 
 export default Intro;
