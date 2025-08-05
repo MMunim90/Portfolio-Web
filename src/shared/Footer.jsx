@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-base-200 text-base-content py-6 mt-16">
+    <footer className="bg-gray-800 text-white py-6">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm text-white">
-          © {new Date().getFullYear()} MD. SHAHAN AL MUNIM. All rights reserved.
+          © {new Date().getFullYear()} MMunim. All rights reserved.
         </p>
-        <div className="flex space-x-6 mt-4 md:mt-0 text-primary text-lg">
+        <div className="flex space-x-6 mt-4 md:mt-0 text-indigo-500 text-lg">
           <a
             href="https://github.com/MMunim90"
             target="_blank"

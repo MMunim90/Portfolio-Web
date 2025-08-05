@@ -1,22 +1,41 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import profilePic from "../../assets/munim.jpg";
+import { Typewriter } from "react-simple-typewriter";
+// import bgPic from "../../assets/bg.gif";
 
 const Intro = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-base-100 text-base-content flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 lg:px-24 py-12"
+      className="min-h-screen text-base-content flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-12 lg:px-24 py-6"
     >
       {/* Left Side: Text Content */}
       <div className="max-w-xl space-y-6 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">
           MD. SHAHAN AL MUNIM
         </h1>
-        <h2 className="text-2xl font-medium text-secondary">
-          Frontend Developer & UI Enthusiast
+        <h2 className="text-2xl font-medium text-white">
+          I'm{" "}
+          <span className="text-primary">
+            <Typewriter
+              words={[
+                "Junior Full Stack Developer",
+                "Programming Enthusiast",
+                "MERN Stack Developer",
+                "Tech Explorer",
+                "Problem Solver",
+              ]}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={70}
+              delaySpeed={3000}
+            />
+          </span>
         </h2>
-        <p className="text-lg text-info leading-relaxed">
+        <p className="text-lg text-gray-300 leading-relaxed">
           I craft responsive web interfaces using modern JavaScript tools and
           love building elegant, user-friendly experiences. Currently focusing
           on React.js and UI-driven design.
@@ -25,17 +44,17 @@ const Intro = () => {
         <div className="flex flex-col md:flex-row items-center gap-4 pt-4 justify-center md:justify-start">
           <a
             href="#contact"
-            className="btn btn-outline border-primary text-primary hover:bg-primary hover:text-white transition"
+            className="btn btn-outline border-primary hover:bg-primary text-white transition"
           >
             Let’s Connect
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1PHQ2k1rBPgHfwhnRzzwNkAL_-oIZ7m4M/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1EhbrHLaHMakqstjerUqC7SuCYNAFsIwb/view?usp=drive_link"
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline border-secondary text-secondary hover:bg-secondary hover:text-white transition"
+            className="btn btn-outline border-gray-bg-gray-400 hover:bg-gray-400 text-white hover:text-black transition"
           >
             Download Resume
           </a>
@@ -74,11 +93,11 @@ const Intro = () => {
       </div>
 
       {/* Right: Image */}
-      <div className="mb-10 md:mb-0">
+      <div className="my-10 md:my-0">
         <img
           src={profilePic}
           alt="MD. SHAHAN AL MUNIM"
-          className="w-56 h-56 md:w-64 md:h-64 lg:w-92 lg:h-92 object-cover rounded-full shadow-lg border-4 border-base-300"
+          className="w-56 h-56 md:w-64 md:h-64 lg:w-[450px] lg:h-[450px] object-cover rounded-full shadow-lg border-5 border-primary"
         />
       </div>
     </section>

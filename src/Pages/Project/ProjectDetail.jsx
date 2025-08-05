@@ -2,6 +2,34 @@ import React from "react";
 import { useParams } from "react-router";
 
 const projectDetails = {
+  "real-estate-platform": {
+  "name": "BrickBase",
+  "image": "https://i.ibb.co/0VW7M2g4/Screenshot-2025-07-21-173448.png",
+  "tech": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "tailwindcss",
+    "daisyui",
+    "firebase",
+    "jsonwebtoken",
+    "axios",
+    "react-router",
+    "sweetalert2",
+    "react-icons",
+    "cloudinary",
+    "multer",
+    "stripe",
+    "mongoose"
+  ],
+  "description": "BrickBase is a modern real estate platform that connects buyers, sellers, agents, and admins through a role-based experience. It allows users to explore, wishlist, and make offers on properties; agents to manage listings; and admins to oversee fraud detection and reporting. The platform ensures secure communication, verified listings, and a user-friendly property search experience, streamlining the entire real estate process from discovery to deal closure.",
+  "liveLink": "https://brickbase-47887.web.app/",
+  "github": "https://github.com/MMunim90/real-estate-platform-client",
+  "challenges": "Ensuring role-based access and permissions for different user types was complex. Implementing secure login, wishlist, reporting, and offer management involved intricate backend logic. Managing image uploads and file validation using Cloudinary and Multer added extra layers of complexity. Building scalable MongoDB schemas for properties, users, offers, and reports required thoughtful planning. Designing a responsive, intuitive UI across all devices while maintaining performance was also challenging.",
+  "improvements": "Add real-time chat between agents and buyers. Integrate a map-based property search experience. Implement advanced search filters and saved search alerts. Add multi-step property submission forms with draft save capability. Launch native mobile apps for better user engagement. Incorporate machine learning for personalized property recommendations."
+},
+
   "marathon-management-system": {
     name: "Runfinity",
     image: "https://i.ibb.co/1Yd89Hr5/Screenshot-2025-06-25-165554.png",
@@ -110,7 +138,7 @@ const ProjectDetail = () => {
     );
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24 bg-base-100 text-base-content">
+    <section className="py-16 px-6 md:px-12 lg:px-24 text-base-content">
       <div className="max-w-5xl mx-auto space-y-8">
         <h2 className="text-3xl font-bold text-primary">{project.name}</h2>
         <img
@@ -119,10 +147,10 @@ const ProjectDetail = () => {
           className="rounded-lg shadow-md"
         />
 
-        <p className="text-lg">{project.description}</p>
+        <p className="text-lg text-gray-400">{project.description}</p>
 
         <div>
-          <h3 className="text-xl font-semibold mt-6 mb-2 text-secondary">
+          <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
             Technology Stack:
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -138,17 +166,17 @@ const ProjectDetail = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-secondary mt-6 mb-2">
+          <h3 className="text-xl font-semibold text-white mt-6 mb-2">
             Challenges Faced:
           </h3>
-          <p>{project.challenges}</p>
+          <p className="text-gray-400">{project.challenges}</p>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-secondary mt-6 mb-2">
+          <h3 className="text-xl font-semibold text-white mt-6 mb-2">
             Future Improvements:
           </h3>
-          <p>{project.improvements}</p>
+          <p className="text-gray-400">{project.improvements}</p>
         </div>
 
         <div className="flex gap-4 pt-6">
@@ -164,7 +192,7 @@ const ProjectDetail = () => {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-outline"
+            className="btn btn-outline border border-gray-400 text-gray-400 hover:text-black"
           >
             GitHub (Client)
           </a>

@@ -88,16 +88,16 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="bg-base-100 text-base-content py-16 px-6 md:px-12 lg:px-24"
+      className="text-gray-300 py-16 px-6 md:px-12 lg:px-24"
     >
       <div className="max-w-6xl mx-auto space-y-10">
-        <h2 className="text-4xl font-bold text-primary text-center border-b-4 border-accent inline-block pb-2">
+        <h2 className="text-4xl font-bold text-primary text-center border-b-4 border-white inline-block pb-2">
           My Skills
         </h2>
 
         {Object.entries(skills).map(([category, items]) => (
           <div key={category}>
-            <h3 className="text-2xl font-semibold text-secondary mb-4">
+            <h3 className="text-2xl font-semibold text-white mb-4">
               {category}
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">

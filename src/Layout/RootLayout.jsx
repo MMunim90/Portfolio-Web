@@ -7,7 +7,9 @@ const RootLayout = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <div className="bg-[url('https://i.ibb.co/sdnBcMS5/bg.gif')]">
+                <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );
