@@ -13,7 +13,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-secondary transition"
+            className="hover:text-indigo-700 transition"
           >
             GitHub
           </a>
@@ -22,7 +22,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-secondary transition"
+            className="hover:text-indigo-700 transition"
           >
             LinkedIn
           </a>
@@ -31,7 +31,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-            className="hover:text-secondary transition"
+            className="hover:text-indigo-700 transition"
           >
             Twitter
           </a>

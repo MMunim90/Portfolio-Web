@@ -12,7 +12,7 @@ const About = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-10 my-10">
-          <img className="w-[450px] h-[550px] rounded-lg border-3 border-gray-500 object-cover opacity-85" src="https://i.ibb.co.com/XZhnNrMK/Screenshot-2025-08-10-210942.png" alt="my pic" />
+          <img className="w-[450px] h-[550px] rounded-lg border-3 border-primary object-cover opacity-85" src="https://i.ibb.co.com/XZhnNrMK/Screenshot-2025-08-10-210942.png" alt="my pic" />
 
         <div>
           <p className="text-lg leading-relaxed text-gray-300 mb-10">
