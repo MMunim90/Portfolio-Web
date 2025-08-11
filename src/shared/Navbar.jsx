@@ -13,7 +13,7 @@ const Navbar = () => {
           duration={500}
           className="cursor-pointer"
         >
-          Home
+          Intro
         </ScrollLink>
       </li>
       <li>

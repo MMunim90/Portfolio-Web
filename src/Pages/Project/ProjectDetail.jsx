@@ -24,15 +24,15 @@ const projectDetails = {
     "mongoose"
   ],
   "description": "BrickBase is a modern real estate platform that connects buyers, sellers, agents, and admins through a role-based experience. It allows users to explore, wishlist, and make offers on properties; agents to manage listings; and admins to oversee fraud detection and reporting. The platform ensures secure communication, verified listings, and a user-friendly property search experience, streamlining the entire real estate process from discovery to deal closure.",
-  "liveLink": "https://brickbase-47887.web.app/",
-  "github": "https://github.com/MMunim90/real-estate-platform-client",
-  "challenges": "Ensuring role-based access and permissions for different user types was complex. Implementing secure login, wishlist, reporting, and offer management involved intricate backend logic. Managing image uploads and file validation using Cloudinary and Multer added extra layers of complexity. Building scalable MongoDB schemas for properties, users, offers, and reports required thoughtful planning. Designing a responsive, intuitive UI across all devices while maintaining performance was also challenging.",
-  "improvements": "Add real-time chat between agents and buyers. Integrate a map-based property search experience. Implement advanced search filters and saved search alerts. Add multi-step property submission forms with draft save capability. Launch native mobile apps for better user engagement. Incorporate machine learning for personalized property recommendations."
+  liveLink: "https://brickbase-47887.web.app/",
+  github: "https://github.com/MMunim90/real-estate-platform-client",
+  challenges: "Ensuring role-based access and permissions for different user types was complex. Implementing secure login, wishlist, reporting, and offer management involved intricate backend logic. Managing image uploads and file validation using Cloudinary and Multer added extra layers of complexity. Building scalable MongoDB schemas for properties, users, offers, and reports required thoughtful planning. Designing a responsive, intuitive UI across all devices while maintaining performance was also challenging.",
+  improvements: "Add real-time chat between agents and buyers. Integrate a map-based property search experience. Implement advanced search filters and saved search alerts. Add multi-step property submission forms with draft save capability. Launch native mobile apps for better user engagement. Incorporate machine learning for personalized property recommendations."
 },
 
   "marathon-management-system": {
     name: "Runfinity",
-    image: "https://i.ibb.co/1Yd89Hr5/Screenshot-2025-06-25-165554.png",
+    image: "https://i.ibb.co.com/GQK5DBPj/Screenshot-2025-08-09-001551.png",
     tech: [
       "cors",
       "dotenv",
@@ -102,7 +102,7 @@ const projectDetails = {
 
   "Subscription-box-project": {
     name: "Sub's Now Bro",
-    image: "https://i.ibb.co/23pNGjdv/Screenshot-2025-06-25-155503.png",
+    image: "https://i.ibb.co.com/23XRd7jK/Screenshot-2025-08-09-000400.png",
     tech: [
       "react",
       "firebase",
@@ -144,7 +144,7 @@ const ProjectDetail = () => {
         <img
           src={project.image}
           alt={project.name}
-          className="rounded-lg shadow-md"
+          className="rounded-lg shadow-md border-3 border-gray-400"
         />
 
         <p className="text-lg text-gray-400">{project.description}</p>
@@ -184,7 +184,7 @@ const ProjectDetail = () => {
             href={project.liveLink}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-primary"
+            className="btn btn-primary hover:bg-indigo-700"
           >
             Live Site
           </a>
@@ -192,9 +192,16 @@ const ProjectDetail = () => {
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-outline border border-gray-400 text-gray-400 hover:text-black"
+            className="btn btn-outline border-2 border-gray-400 text-gray-400 hover:text-white hover:bg-gray-400"
           >
             GitHub (Client)
+          </a>
+          <a
+            href={"/"}
+            rel="noreferrer"
+            className="btn btn-primary hover:bg-indigo-700"
+          >
+            Back
           </a>
         </div>
       </div>

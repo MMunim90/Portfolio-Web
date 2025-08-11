@@ -31,25 +31,34 @@ const Education = () => {
       id="education"
       className="text-base-content py-16 px-6 md:px-12 lg:px-24"
     >
-      <div className="max-w-4xl mx-auto space-y-10">
+      <div className="max-w-5xl mx-auto space-y-10">
         <h2 className="text-4xl font-bold text-primary border-b-4 border-white inline-block pb-2">
           Education
         </h2>
 
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="p-4 rounded-lg shadow-sm bg-gray-500 space-y-2 border-3 border-white"
+              className="rounded-2xl overflow-hidden bg-gray-700/50 backdrop-blur border border-white/20 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col p-6"
             >
-              <div className="flex items-center gap-4 mb-2">
-                <FaGraduationCap className="hidden md:block text-indigo-700 text-xl" />
-                <h3 className="text-xl font-semibold text-indigo-700">{edu.degree}</h3>
+              {/* Icon */}
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 bg-primary/20 rounded-full">
+                  <FaGraduationCap className="text-primary text-xl" />
+                </div>
+                <h3 className="text-lg font-semibold text-white leading-snug">
+                  {edu.degree}
+                </h3>
               </div>
-              <p className="text-sm text-gray-300">{edu.institution}</p>
+
+              {/* Content */}
+              <p className="text-sm text-gray-300 font-bold">{edu.institution}</p>
               <p className="text-sm text-gray-300">{edu.duration}</p>
               <p className="text-sm text-gray-300">{edu.status}</p>
-              <p className="text-sm text-gray-300">GPA: {edu.GPA}</p>
+              {edu.GPA.trim() && (
+                <p className="text-sm text-gray-300">GPA: {edu.GPA}</p>
+              )}
             </div>
           ))}
         </div>

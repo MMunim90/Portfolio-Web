@@ -15,7 +15,7 @@ const Intro = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-primary">
           MD. SHAHAN AL MUNIM
         </h1>
-        <h2 className="text-2xl font-medium text-white">
+        <h2 className="text-2xl font-bold text-white">
           I'm{" "}
           <span className="text-primary">
             <Typewriter
@@ -54,40 +54,40 @@ const Intro = () => {
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline border-gray-bg-gray-400 hover:bg-gray-400 text-white hover:text-black transition"
+            className="btn btn-outline border-2 border-gray bg-gray-400 hover:bg-gray-600 text-white transition"
           >
             Download Resume
           </a>
         </div>
 
         {/* Social Media Buttons */}
-        <div className="flex gap-6 pt-8 justify-center md:justify-start text-primary text-2xl">
+        <div className="flex gap-6 pt-8 justify-center md:justify-start text-white text-2xl">
           <a
             href="https://github.com/MMunim90"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-secondary transition"
+            className="hover:text-primary transition"
           >
-            <FaGithub />
+            <FaGithub size={35}/>
           </a>
           <a
             href="https://www.linkedin.com/in/m-munim/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-secondary transition"
+            className="hover:text-primary transition"
           >
-            <FaLinkedin />
+            <FaLinkedin size={35}/>
           </a>
           <a
             href="https://x.com/__munim__"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-            className="hover:text-secondary transition"
+            className="hover:text-primary transition"
           >
-            <FaTwitter />
+            <FaTwitter size={35}/>
           </a>
         </div>
       </div>

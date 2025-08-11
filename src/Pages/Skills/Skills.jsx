@@ -107,7 +107,7 @@ const Skills = () => {
                     <div className="text-2xl">{skill.icon}</div>
                     <div className="flex justify-between w-full">
                       <span className="font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted">{skill.level}%</span>
+                      {/* <span className="text-sm text-muted">{skill.level}%</span> */}
                     </div>
                   </div>
                   <div className="w-full bg-base-300 rounded-full h-3">
