@@ -7,6 +7,7 @@ import Education from "../Education/Education";
 import Projects from "../Project/Projects";
 import { keyframes } from "@emotion/react";
 import { Fade } from "react-awesome-reveal";
+import CoursesSection from "../Course/CoursesSection";
 
 const Home = () => {
   const slightFadeDown = keyframes`
@@ -35,6 +36,9 @@ const Home = () => {
       </Fade>
       <Fade direction="down" keyframes={slightFadeDown}>
         <Projects></Projects>
+      </Fade>
+      <Fade direction="down" keyframes={slightFadeDown}>
+        <CoursesSection></CoursesSection>
       </Fade>
       <Fade direction="down" keyframes={slightFadeDown}>
         <Contact></Contact>

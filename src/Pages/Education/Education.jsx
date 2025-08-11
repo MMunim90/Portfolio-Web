@@ -5,6 +5,7 @@ const educationData = [
   {
     degree: "Bachelor of Science in Computer Science & Engineering",
     institution: "World University of Bangladesh",
+    location: "Dhaka, Bangladesh",
     duration: "2023 – Present",
     status: "Ongoing",
     GPA: " ",
@@ -12,6 +13,7 @@ const educationData = [
   {
     degree: "Higher Secondary Certificate (HSC)",
     institution: "Aman-ullah College",
+    location: "Bhandaria, Pirojpur",
     duration: "2019 – 2021",
     status: "Completed",
     GPA: "5.00",
@@ -19,6 +21,7 @@ const educationData = [
   {
     degree: "Secondary School Certificate (SSC)",
     institution: "Vihari Pilot High School",
+    location: "Bhandaria, Pirojpur",
     duration: "2017 – 2019",
     status: "Completed",
     GPA: "5.00",
@@ -53,7 +56,8 @@ const Education = () => {
               </div>
 
               {/* Content */}
-              <p className="text-sm text-gray-300 font-bold">{edu.institution}</p>
+              <p className="text-md text-gray-300 font-bold">{edu.institution}</p>
+              <p className="text-sm text-gray-300 mb-6">({edu.location})</p>
               <p className="text-sm text-gray-300">{edu.duration}</p>
               <p className="text-sm text-gray-300">{edu.status}</p>
               {edu.GPA.trim() && (

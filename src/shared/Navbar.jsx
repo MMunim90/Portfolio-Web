@@ -1,7 +1,7 @@
 import React from "react";
 import { Link as RouterLink } from "react-router";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const navItems = (
@@ -76,7 +76,7 @@ const Navbar = () => {
           to="/"
           className="font-bold text-xl text-white flex items-center gap-2"
         >
-        <img src={logo} alt="" className="w-10 h-12"/>
+          <img src={logo} alt="" className="w-10 h-12" />
           <p>MMunim.dev</p>
         </RouterLink>
       </div>
@@ -110,6 +110,15 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <a
+        href="https://drive.google.com/file/d/1EhbrHLaHMakqstjerUqC7SuCYNAFsIwb/view?usp=drive_link"
+        download
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-outline border-none bg-primary hover:bg-indigo-700 text-white transition hidden lg:block pt-2 ml-6"
+      >
+        Download Resume
+      </a>
     </div>
   );
 };

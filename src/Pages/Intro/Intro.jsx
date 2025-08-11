@@ -8,11 +8,11 @@ const Intro = () => {
   return (
     <section
       id="home"
-      className="min-h-screen text-base-content flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-12 lg:px-24 py-6"
+      className="min-h-screen text-base-content flex flex-col-reverse lg:flex-row items-center justify-around px-6 md:px-12 lg:px-24 py-6"
     >
       {/* Left Side: Text Content */}
       <div className="max-w-xl space-y-6 text-center md:text-left">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary">
+        <h1 className="text-3xl md:text-5xl font-bold text-primary">
           MD. SHAHAN AL MUNIM
         </h1>
         <h2 className="text-2xl font-bold text-white">
@@ -44,7 +44,7 @@ const Intro = () => {
         <div className="flex flex-col md:flex-row items-center gap-4 pt-4 justify-center md:justify-start">
           <a
             href="#contact"
-            className="btn btn-outline border-primary hover:bg-primary text-white transition"
+            className="btn btn-outline border-primary hover:bg-primary text-white transition border-2"
           >
             Let’s Connect
           </a>
@@ -54,7 +54,7 @@ const Intro = () => {
             download
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline border-2 border-gray bg-gray-400 hover:bg-gray-600 text-white transition"
+            className="btn btn-outline border-none bg-primary hover:bg-indigo-700 text-white transition"
           >
             Download Resume
           </a>
@@ -93,11 +93,11 @@ const Intro = () => {
       </div>
 
       {/* Right: Image */}
-      <div className="my-10 md:my-0">
+      <div className="my-10 lg:my-0">
         <img
           src={profilePic}
           alt="MD. SHAHAN AL MUNIM"
-          className="w-56 h-56 md:w-64 md:h-64 lg:w-[450px] lg:h-[450px] object-cover rounded-full shadow-lg border-5 border-primary"
+          className="w-56 h-56 md:w-64 md:h-64 lg:w-[450px] lg:h-[450px] object-cover rounded-full shadow-lg border-5 border-primary "
         />
       </div>
     </section>

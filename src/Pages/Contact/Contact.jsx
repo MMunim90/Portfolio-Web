@@ -7,6 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import Swal from "sweetalert2";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   const form = useRef();
@@ -94,6 +95,11 @@ const Contact = () => {
                 >
                   WhatsApp Chat
                 </a>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <FaLocationDot className="text-white text-xl" />
+                Dhaka, Bangladesh
               </div>
             </div>
           </div>

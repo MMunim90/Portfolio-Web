@@ -179,8 +179,9 @@ const ProjectDetail = () => {
           <p className="text-gray-400">{project.improvements}</p>
         </div>
 
-        <div className="flex gap-4 pt-6">
-          <a
+        <div className="flex flex-col md:flex-row gap-4 pt-6 items-center">
+          <div className="flex gap-4">
+            <a
             href={project.liveLink}
             target="_blank"
             rel="noreferrer"
@@ -196,6 +197,7 @@ const ProjectDetail = () => {
           >
             GitHub (Client)
           </a>
+          </div>
           <a
             href={"/"}
             rel="noreferrer"
