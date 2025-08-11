@@ -18,7 +18,7 @@ const About = () => {
           <p className="text-lg leading-relaxed text-gray-300 mb-10">
           Hello! I'm{" "}
           <span className="font-semibold">MD. SHAHAN AL MUNIM</span>
-          , a passionate programmer from{" "}
+          , a passionate programmer and MERN Stack Developer from{" "}
           <span className="font-medium">Bangladesh</span>, currently
           pursuing my Bachelor's in{" "}
           <span className="font-semibold">Computer Science & Engineering in World University of Bangladesh</span>. My programming journey

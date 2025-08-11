@@ -3,6 +3,7 @@ import { Outlet } from 'react-router';
 import Navbar from '../shared/Navbar';
 import Footer from '../shared/Footer';
 import ScrollToTopButton from '../shared/ScrollToTopButton';
+import SocialIcons from '../shared/SocialIcons';
 
 const RootLayout = () => {
     return (
@@ -12,6 +13,7 @@ const RootLayout = () => {
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
+            <SocialIcons></SocialIcons>
             <ScrollToTopButton></ScrollToTopButton>
         </div>
     );
