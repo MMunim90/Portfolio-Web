@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import profilePic from "../../assets/munim.jpg";
 import { Typewriter } from "react-simple-typewriter";
+import { SiSololearn } from "react-icons/si";
 // import bgPic from "../../assets/bg.gif";
 
 const Intro = () => {
@@ -88,6 +89,15 @@ const Intro = () => {
             className="hover:text-primary transition"
           >
             <FaTwitter size={35}/>
+          </a>
+          <a
+            href="https://www.sololearn.com/en/profile/29786474"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            className="hover:text-primary transition"
+          >
+            <SiSololearn size={35}/>
           </a>
         </div>
       </div>

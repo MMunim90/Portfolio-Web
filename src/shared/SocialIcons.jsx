@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { SiSololearn } from "react-icons/si";
 
 const SocialIcons = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,6 +30,12 @@ const SocialIcons = () => {
       label: "GitHub",
       hoverColor: "hover:bg-indigo-700",
     },
+    {
+      icon: <SiSololearn />,
+      url: "https://www.sololearn.com/en/profile/29786474",
+      label: "Sololearn",
+      hoverColor: "hover:bg-indigo-700",
+    },
   ];
 
   useEffect(() => {
@@ -41,7 +48,7 @@ const SocialIcons = () => {
 
   return (
     isVisible && (
-      <div className="fixed bottom-80 left-3 md:bottom-20 md:left-0.5 lg:bottom-[400px] lg:left-8 z-50 flex flex-col gap-3">
+      <div className="fixed bottom-12 left-3 md:bottom-20 md:left-0.5 lg:bottom-[400px] lg:left-8 z-50 flex flex-col gap-3">
         {socialLinks.map((link, index) => (
           <a
             key={index}
