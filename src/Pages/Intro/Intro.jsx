@@ -78,6 +78,7 @@ const Intro = () => {
             rel="noopener noreferrer"
             aria-label="GitHub"
             className="hover:text-primary transition animate-bounce"
+            style={{ animationDelay: "0.2s" }}
           >
             <FaGithub size={35}/>
           </a>
@@ -87,6 +88,7 @@ const Intro = () => {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="hover:text-primary transition animate-bounce"
+            style={{ animationDelay: "0.4s" }}
           >
             <FaLinkedin size={35}/>
           </a>
@@ -96,6 +98,7 @@ const Intro = () => {
             rel="noopener noreferrer"
             aria-label="Twitter"
             className="hover:text-primary transition animate-bounce"
+            style={{ animationDelay: "0.6s" }}
           >
             <FaTwitter size={35}/>
           </a>
