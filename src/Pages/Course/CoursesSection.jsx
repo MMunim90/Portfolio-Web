@@ -3,6 +3,8 @@ import fullStackImg from "../../assets/Full Stack.jpg"
 import reactImg from "../../assets/react_basic certificate.jpg"
 import webImg from "../../assets/dreamland it web certificate.jpg"
 import codeInPlaceImg from "../../assets/code in place.jpg"
+import BYEIImg from "../../assets/BYEI.png"
+import arduinoImg from "../../assets/arduino certificate.jpg"
 import { FaClock } from "react-icons/fa";
 
 const courses = [
@@ -42,6 +44,24 @@ const courses = [
     image: fullStackImg,
     verifyLink: "https://www.linkedin.com/posts/m-munim_fullstackdeveloper-mern-webdevelopment-activity-7348170399307730945-UXs8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPgP-oB7SLMOkW3JMzQ4IGwR9MJq5mKFwU",
   },
+  {
+    id: 5,
+    name: "Green Day Training (GDT)",
+    under: "Bangladesh Youth Environmental Initiative (BYEI) & Bangladesh Earth Olympiad (BEO)",
+    duration: "1 Day",
+    desc: "Learned environmental education, sustainability, and climate changes on nature ",
+    image: BYEIImg,
+    verifyLink: "https://www.linkedin.com/posts/m-munim_bangladesh-youth-environmental-initiative-activity-7313451273381416960-njAF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPgP-oB7SLMOkW3JMzQ4IGwR9MJq5mKFwU",
+  },
+  {
+    id: 6,
+    name: "30 Days Masterclass on Arduino",
+    under: "Gobeshona Learning Academy",
+    duration: "30 Days",
+    desc: "Learned Arduino, C Programming, IoT, EmbeddedSystems",
+    image: arduinoImg,
+    verifyLink: "https://www.linkedin.com/posts/m-munim_arduino-electronics-iot-activity-7346884691221803008-ihmH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPgP-oB7SLMOkW3JMzQ4IGwR9MJq5mKFwU",
+  },
 ];
 
 export default function CoursesSection() {
@@ -52,7 +72,7 @@ export default function CoursesSection() {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-primary border-b-4 border-white inline-block pb-2 mb-8">
-          My Completed Courses
+          Courses & Certificates
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

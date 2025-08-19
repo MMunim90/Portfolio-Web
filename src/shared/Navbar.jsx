@@ -58,6 +58,16 @@ const Navbar = () => {
       </li>
       <li>
         <ScrollLink
+          to="courses"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
+          Courses
+        </ScrollLink>
+      </li>
+      <li>
+        <ScrollLink
           to="contact"
           smooth={true}
           duration={500}
@@ -111,7 +121,7 @@ const Navbar = () => {
         </div>
       </div>
       <a
-        href="https://drive.google.com/file/d/1EhbrHLaHMakqstjerUqC7SuCYNAFsIwb/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1GHIXV_J-0n1BrjWDZXMG5EQFyFKMS1JG/view?usp=drive_link"
         download
         target="_blank"
         rel="noopener noreferrer"

@@ -51,13 +51,22 @@ const Intro = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1EhbrHLaHMakqstjerUqC7SuCYNAFsIwb/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1GHIXV_J-0n1BrjWDZXMG5EQFyFKMS1JG/view?usp=drive_link"
             download
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline border-none bg-primary hover:bg-indigo-700 text-white transition"
           >
             Download Resume
+          </a>
+           <a
+            href="https://drive.google.com/file/d/1lUTCNzZmZODqheKgVDZQUQzU4iAYQ7D1/view?usp=drive_link"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline border-none bg-primary hover:bg-indigo-700 text-white transition"
+          >
+            Download CV
           </a>
         </div>
 
@@ -68,7 +77,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-primary transition"
+            className="hover:text-primary transition animate-bounce"
           >
             <FaGithub size={35}/>
           </a>
@@ -77,7 +86,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-primary transition"
+            className="hover:text-primary transition animate-bounce"
           >
             <FaLinkedin size={35}/>
           </a>
@@ -86,7 +95,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-            className="hover:text-primary transition"
+            className="hover:text-primary transition animate-bounce"
           >
             <FaTwitter size={35}/>
           </a>
@@ -94,8 +103,8 @@ const Intro = () => {
             href="https://www.sololearn.com/en/profile/29786474"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter"
-            className="hover:text-primary transition"
+            aria-label="Sololearn"
+            className="hover:text-primary transition animate-spin"
           >
             <SiSololearn size={35}/>
           </a>
@@ -107,7 +116,7 @@ const Intro = () => {
         <img
           src={profilePic}
           alt="MD. SHAHAN AL MUNIM"
-          className="w-56 h-56 md:w-64 md:h-64 lg:w-[450px] lg:h-[450px] object-cover rounded-full shadow-lg border-5 border-primary "
+          className="w-56 h-56 md:w-64 md:h-64 lg:w-[450px] lg:h-[450px] object-cover rounded-full shadow-lg border-5 border-primary"
         />
       </div>
     </section>

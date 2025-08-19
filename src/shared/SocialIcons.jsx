@@ -56,7 +56,7 @@ const SocialIcons = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={link.label}
-            className={`p-3 rounded-full bg-primary text-white shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-110 hover:-translate-y-1 ${link.hoverColor}`}
+            className={`hover:animate-spin p-3 rounded-full bg-primary text-white shadow-lg transition-all duration-300 cursor-pointer transform hover:scale-110 hover:-translate-y-1 ${link.hoverColor}`}
           >
             {link.icon}
           </a>
